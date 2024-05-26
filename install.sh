@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if brew ls --versions bun > /dev/null; then
+if brew --versions > /dev/null; then
     echo "brew already installed"
 else
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
